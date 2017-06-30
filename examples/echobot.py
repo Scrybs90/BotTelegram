@@ -6,6 +6,7 @@
 # This program is dedicated to the public domain under the CC0 license.
 import logging
 import telegram
+from telegram.ext import *
 from telegram.error import NetworkError, Unauthorized
 from time import sleep
 
@@ -15,7 +16,7 @@ update_id = None
 def main():
     global update_id
     # Telegram Bot Authorization Token
-    bot = telegram.Bot('TOKEN')
+    bot = telegram.Bot('248326254:AAFOkR3P9jRCCdRoYM-a2L3rqkJOpJ6BTGU')
 
     # get the first pending update_id, this is so we can skip over it in case
     # we get an "Unauthorized" exception.
